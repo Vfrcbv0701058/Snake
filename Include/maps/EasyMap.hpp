@@ -26,7 +26,7 @@ private:
     const int MAP_SIZE;
     string* map = new string[HEIGHT];
 public:
-    EasyMap() : WIDTH(12), HEIGHT(9), MAP_SIZE(WIDTH * HEIGHT) {}
+    EasyMap() : WIDTH(23), HEIGHT(12), MAP_SIZE(WIDTH * HEIGHT) {}
     ~EasyMap();
     void Create_Map();
     string * GetMap();
