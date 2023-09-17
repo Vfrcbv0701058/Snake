@@ -13,6 +13,12 @@ void EasyMap::CreateEasyMap(){
     }
 }
 
+void SetCursor(int x, int y) {
+    initscr(); // Initialization ncurses
+    move(y, x); // Set cursor position
+    endwin(); // End work with ncurses
+}
+
 string* EasyMap::GetEasyMap(){      // Get map
     return map;
 }

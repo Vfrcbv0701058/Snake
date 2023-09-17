@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <ncurses.h>
 //#include "../../include/maps/ChooseMode.hpp"
 using namespace std;
 //    "###########\n"
@@ -30,6 +31,7 @@ public:
     string * GetHardMap();
     int GetHeightHardMap();
     int GetWidthHardMap();
+    void SetCursor(int x, int y);
 };
 
 #endif /* map_h */
