@@ -1,11 +1,22 @@
 #include "../../include/maps/HardMap.hpp"
 
-string HardMap::Draw_map(){
-    string * map = new string; // dont forget to delite
-    for(int i = 0; i < HardMap::HEIGHT_HARD; i++){
-        for(int j = 0; i < HardMap::WIDTH_HARD; j++){
-            
+void HardMap::Create_Map(){
+    for(int i = 0; i < HEIGHT_HARD; i++){
+        for(int j = 0; j < WIDTH_HARD; j++){
+            if (i > 0 || j > 0 || i < HEIGHT_HARD - 1 || j < WIDTH_HARD - 1) {
+                map[i] += " ";
+            } else{
+                map[i] += "#";
+            }
         }
+        cout << "\n";
     }
-    return * map;
+}
+
+HardMap::~HardMap(){
+    delete [] map;
+}
+
+string* HardMap::GetMap(){
+    return map;
 }

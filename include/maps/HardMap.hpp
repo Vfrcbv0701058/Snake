@@ -2,6 +2,7 @@
 #define map_h
 
 #include <string>
+#include <iostream>
 //#include "../../include/maps/ChooseMode.hpp"
 using namespace std;
 //    "###########\n"
@@ -19,9 +20,12 @@ private:
     const int WIDTH_HARD;
     const int HEIGHT_HARD;
     const int MAP_SIZE;
+    string* map = new string[HEIGHT_HARD];
 public:
-    HardMap() : MAP_SIZE(WIDTH_HARD * HEIGHT_HARD), WIDTH_HARD(12), HEIGHT_HARD(9) {}
-    string Draw_map();
+    HardMap() : WIDTH_HARD(12), HEIGHT_HARD(9), MAP_SIZE(WIDTH_HARD * HEIGHT_HARD) {}
+    ~HardMap();
+    void Create_Map();
+    string * GetMap();
 };
 
 #endif /* map_h */
