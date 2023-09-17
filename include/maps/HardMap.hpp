@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-//#include "../../include/maps/ChooseMode.hpp"
+#include "../../include/maps/ChooseMode.hpp"
 using namespace std;
 //    "###########\n"
 //    "#         #\n"
@@ -26,6 +26,8 @@ public:
     ~HardMap();
     void Create_Map();
     string * GetMap();
+    int GetHeight();
+    int GetWidth();
 };
 
 #endif /* map_h */

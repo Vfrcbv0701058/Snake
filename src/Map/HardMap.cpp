@@ -13,10 +13,18 @@ void HardMap::Create_Map(){
     }
 }
 
-HardMap::~HardMap(){
+HardMap::~HardMap(){        // Delete map
     delete [] map;
 }
 
-string* HardMap::GetMap(){
+string* HardMap::GetMap(){      // Get map
     return map;
+}
+
+int HardMap::GetHeight(){         // Get height
+    return HEIGHT_HARD;
+}
+
+int HardMap::GetWidth(){          // Get width
+    return WIDTH_HARD;
 }
