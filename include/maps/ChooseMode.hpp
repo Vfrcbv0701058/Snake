@@ -10,7 +10,8 @@
 
 #include "HardMap.hpp"
 #include <iostream>
-bool Choose_mode();
+void Choose_mode();
+bool GetMapType();
 short diff;
 
 #endif /* ChooseMode_hpp */

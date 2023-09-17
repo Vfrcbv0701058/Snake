@@ -28,10 +28,10 @@ private:
 public:
     EasyMap() : WIDTH(23), HEIGHT(12), MAP_SIZE(WIDTH * HEIGHT) {}
     ~EasyMap();
-    void Create_Map();
-    string * GetMap();
-    int GetHeight();
-    int GetWidth();
+    void CreateEasyMap();
+    string * GetEasyMap();
+    int GetHeightEasyMap();
+    int GetWidthEasyMap();
 };
 
 #endif /* EasyMap_hpp */

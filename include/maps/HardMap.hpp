@@ -22,12 +22,14 @@ private:
     const int MAP_SIZE;
     string* map = new string[HEIGHT];
 public:
-    HardMap() : WIDTH(12), HEIGHT(9), MAP_SIZE(WIDTH * HEIGHT) {}
+    HardMap() : WIDTH(12), HEIGHT(9), MAP_SIZE(WIDTH * HEIGHT) {
+        CreateHardMap();
+    }
     ~HardMap();
-    void Create_Map();
-    string * GetMap();
-    int GetHeight();
-    int GetWidth();
+    void CreateHardMap();
+    string * GetHardMap();
+    int GetHeightHardMap();
+    int GetWidthHardMap();
 };
 
 #endif /* map_h */
