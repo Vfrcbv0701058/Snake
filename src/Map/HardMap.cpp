@@ -1,9 +1,9 @@
 #include "../../include/maps/HardMap.hpp"
 
 void HardMap::Create_Map(){
-    for(int i = 0; i < HEIGHT_HARD; i++){
-        for(int j = 0; j < WIDTH_HARD; j++){
-            if (i > 0 || j > 0 || i < HEIGHT_HARD - 1 || j < WIDTH_HARD - 1) {
+    for(int i = 0; i < HEIGHT; i++){
+        for(int j = 0; j < WIDTH; j++){
+            if (i > 0 || j > 0 || i < HEIGHT - 1 || j < WIDTH - 1) {
                 map[i] += " ";
             } else{
                 map[i] += "#";
@@ -22,9 +22,9 @@ string* HardMap::GetMap(){      // Get map
 }
 
 int HardMap::GetHeight(){         // Get height
-    return HEIGHT_HARD;
+    return HEIGHT;
 }
 
 int HardMap::GetWidth(){          // Get width
-    return WIDTH_HARD;
+    return WIDTH;
 }

@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-#include "../../include/maps/ChooseMode.hpp"
+//#include "../../include/maps/ChooseMode.hpp"
 using namespace std;
 //    "###########\n"
 //    "#         #\n"
@@ -17,12 +17,12 @@ using namespace std;
 
 class HardMap {
 private:
-    const int WIDTH_HARD;
-    const int HEIGHT_HARD;
+    const int WIDTH;
+    const int HEIGHT;
     const int MAP_SIZE;
-    string* map = new string[HEIGHT_HARD];
+    string* map = new string[HEIGHT];
 public:
-    HardMap() : WIDTH_HARD(12), HEIGHT_HARD(9), MAP_SIZE(WIDTH_HARD * HEIGHT_HARD) {}
+    HardMap() : WIDTH(12), HEIGHT(9), MAP_SIZE(WIDTH * HEIGHT) {}
     ~HardMap();
     void Create_Map();
     string * GetMap();
